@@ -1,0 +1,23 @@
+.about-container {
+  margin-top: 2vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". text ill . ."
+    ". text3 . . .";
+}
+.about-container > .text1 {
+  grid-area: text;
+}
+.about-container > .img1 {
+  grid-area: ill;
+}
+.text1 > p.quote {
+  padding-left: 10%;
+}
+
+.about-container > .text3 {
+  grid-area: text3;
+}
